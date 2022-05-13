@@ -1,7 +1,7 @@
 
 
 def main():
-    """ We cna create dictonaries in 4 standard ways"""
+    """ We can create dictonaries in 4 standard ways"""
     d_1 = {'A' : 1, 'B' : 2, 'C' : 3}
     d_2 = dict(A=1, B=2, C=3)
     d_3 = dict([('A',1),('B',2),('C',3)])
@@ -13,7 +13,7 @@ def main():
     d_4 = dict(zip(x,y))
 
     """ we can create using dict.fromkeys(itrable, value) class method"""
-    d_5 = dict.fromkeys(x,0) # The value '0' will get assigned to all keys
+    d_5 = dict.fromkeys(x,0) # The value '0' is default will get assigned to all keys
     print(d_1, d_2, d_3, d_4, d_5)
 
     """ we can retrive keys from dictonaries using d_5.keys() method"""
@@ -23,7 +23,7 @@ def main():
     print(type(d_5.values()), d_5.values())
 
     """ we can retrive values from dictonaries using two modes ( d_3.get(key) || d_3[] method"""
-    print(d_4.get('z'), d_3.get('z'))
+    print(d_4.get('z'), d_4['z'])
 
     """ we can retrive items from dictonaries using d_3.items() """
     print(type(d_3.items()), d_3.items())
@@ -93,9 +93,13 @@ def main():
     # Iterate through d_1 adding contents of list to
     # coresponding value in list
 
-    # code below
-    for i in d_1:
-        print(i)
+    index = 0
+    for key in d_1.keys():
+        d_1[key] += values[index]
+        index += 1
+        print(d_1.values())
+
+
 
 
 
