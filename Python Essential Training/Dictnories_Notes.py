@@ -9,7 +9,7 @@ def printDict(dict):
 
 def main():
     dictionary = {"Kitten" : "meow", "dog" : "bark", "lion" : "roar"}
-    # we can assign a dictnoary is below method as well
+    # we can assign a dictionary is below method as well
     animals = dict(Kitten = "meow", dog = "bark", lion = "roar")
     printDict(dictionary)
 
