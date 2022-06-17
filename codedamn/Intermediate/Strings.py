@@ -93,7 +93,8 @@ def rstrip_rpartition():
     s = "     aeiouatbi     "
     print(s.rstrip())
     print(s.partition("a")) # partition based on first a
-    print(s.rpartition("a")) # partition based on last a 
+    print(s.rpartition("a"))
+    print("<========== is_sac_enabled : {} ========> ".format(True))# partition based on last a
 
 
 if __name__ == "__main__":
