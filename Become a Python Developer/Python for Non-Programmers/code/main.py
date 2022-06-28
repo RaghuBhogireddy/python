@@ -50,6 +50,43 @@ for seq in sequence:
     print(seq)
 
 """ Dictonary """
+print("###########")
+cats = {"Jane": 7, "Rag":5, "kitty": 8}
+for cat, age in cats.items():
+    print(cat+":"+ str(age))
 
+print("###################")
+print("Word Count")
+
+text = """
+    In this course, Nick teaches the fundamentals of Python to you: a non-programmer, 
+    a user with little to no coding experience. Learn more about what Python is, and what it is and 
+    isn’t used for. Explore how Python works with numbers and how you can interact with simple programs such 
+    as a simple number-guessing game. Find out how to work with text in Python by building a reusable function 
+    to count the words in a block of text. And along the way, 
+    tackle quick challenges and other games that allow you to put your new skills to the test.
+"""
+
+word_count = {}
+
+for word in text.lower().split():
+    if word in word_count:
+        word_count[word] += 1
+    else:
+        word_count[word] = 1
+
+print(word_count)
+
+
+print("######")
+print("---- Functions -------")
+
+def dog(name):
+    return f"{name} : Woof Woof"
+
+print(dog("ted"))
+
+number = input("number: ")
+print(number + 2)
 
 
