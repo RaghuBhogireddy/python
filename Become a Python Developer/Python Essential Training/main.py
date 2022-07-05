@@ -20,7 +20,7 @@ print(f'length of animal_set : {len(animal_set)}')
 animal_tuple = (animals)
 print(animal_tuple)
 
-#Dictonaries
+#Dictionaries
 print(dir(dict))
 animals_dict = {'dog': 'animal', 'cat': 'animal', 'parrot':'bird'}
 print(animals_dict)

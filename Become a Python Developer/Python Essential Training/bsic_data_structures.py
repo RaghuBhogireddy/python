@@ -26,6 +26,7 @@ class list_ds:
         slice = self.list[start:end]
         return slice
 
+print("+++++++++++++ Lists +++++++++++++++++")
 
 # list is data structure more similar like an string but with ordered sequence of objects. 
 # list is subscriptable -> meaning we can access an element inside a list with an index 
@@ -36,7 +37,7 @@ my_list.remove("ramu") # removed specified element
 my_list.pop() # always remove element at end
 print(my_list.slice_list(2,3)) # can slice a list based on start and end. also can use step to skip elemets 
 
-print("++++++++++++++++++++++++++++++")
+print("+++++++++++ Sets +++++++++++++++++++")
 
 class set_ds:
     def __init__(self):
@@ -64,7 +65,7 @@ my_set.add("raghu") # to add element
 my_set.discard("raghu") # to remove an element. If element not exist it won't throw an error
 my_set.remove("four") # to remove an element. If element not exist, it will throw an error
 
-print("++++++++++++++++++++++++++++++")
+print("+++++++++++ Tuple +++++++++++++++++++")
 
 class tuple_ds:
     def __init__(self):
@@ -75,6 +76,7 @@ class tuple_ds:
         return print(self.tuple)
 
     def modify(self, param):
+        # can access an elements using it's index
         self.tuple[4].append(param)
         return self.return_tuple()
     
@@ -83,7 +85,7 @@ my_tuple = tuple_ds()
 my_tuple.return_tuple()
 my_tuple.modify("raghu")
 
-print("++++++++++++++++++++++++++++++")
+print("++++++++++ dictionary ++++++++++++++++++++")
 
 
 class dict_ds:
